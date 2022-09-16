@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./style.css">
+    <title>丸龜製麵~主打手工的烏龍麵</title>
+  </head>
+</style>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background-color">
+      <div class="container-fluid font-weight">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="https://www.marukametw.com/images/logo.png"
+            alt="#"
+            width="75%"
+            height="75%"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >網站首頁</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">店面資訊</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                關於丸龜
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./shopping.html">菜單介紹</a></li>
+                <li><a class="dropdown-item" href="#">最新消息</a></li>
+              </ul>
+            </li>
+          </ul>
+
+    <!-- 右邊navbar按鈕 -->
+    <form class="form-inline my-1">
+      <a class="btn btn-outline-light me-1" data-bs-toggle="modal" data-bs-target="#loginModal"href="#">登入</a>
+      <a href="#" class="btn btn-light me-1" data-bs-toggle="modal" data-bs-target="#registerModal">註冊</a>
+        <button class="btn btn-sm btn-cart me-1"type="button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-cart-shopping fa-2x" style="color:white;"></i>
+          <span class="top-0 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1" style="min-width:350px;">
+              <div class="px-4  py-3">
+                  <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                  <tr>
+                    <td>
+                      <a href="#" class="btn btn-light text-muted" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                      <i class="fa-solid fa-trash-can"></i>
+                  </a>
+              </td>
+              <td class="align-middle">溫玉濃湯烏龍麵</td>
+                    <td class="align-middle">1份</td>
+                    <td class="align-middle text-end">120元</td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <a href="#" class="btn btn-light text-muted" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </a>
+                </td>
+                <td class="align-middle">釜揚烏龍麵</td>
+                      <td class="align-middle">1份</td>
+                      <td class="align-middle text-end">80元</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#" class="btn btn-light text-muted" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </a>
+                </td>
+                <td class="align-middle">牛肉烏龍麵</td>
+                      <td class="align-middle">1份</td>
+                      <td class="align-middle text-end">160元</td>
+                    </tr>
+              </tbody>
+          </table>
+          <div class="d-grid gap-2 mx-auto">
+              <button class="btn btn-outline-primary" type="button">確認結帳</button>
+            </div>
+              </div>
+            </div>
+    </form>
+  </div>
+</div>
+</nav>
+
+<!-- 主視覺 -->
+      <div class="jumbotron-bg d-flex align-items-center"></div>
+      <div class="container">
+        <div class="row bg-info">
+          <div class="row">
+            <div class="col-md-3 mt-5">
+              <div class="list-group sticky-top" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action list-group-item-dark active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">菜單介紹</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">精選炸物</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">精選飯糰</a>
+                <a class="list-group-item list-group-item-action list-group-item-light" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">其他料理</a>
+              </div>
+            </div>
+              <!-- 第一個List group -->
+            <div class="col-md-9">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <div class="row row-cols-1 row-cols-md-3 g-4 my-4 text-center">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20180605132152.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">豚骨烏龍麵</h5>
+                          <p class="card-text" style="text-align:justify">～經典暢銷人氣王～ 每日新鮮熬煮成濃郁香醇的豚骨湯頭，加上鮮嫩豬肉、獨門半熟蛋，搭配手作烏龍麵，是丸亀製麵暢銷商品之一！</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20181116154634.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">香辣豚骨烏龍麵</h5>
+                          <p class="card-text" style="text-align:justify">～獨家商品～台灣獨特研發的菜單！ 每日新鮮熬煮成濃郁香醇的豚骨湯頭，加上鮮嫩豬肉、半熟蛋，搭配獨門特調香辣醬，帶有淡淡香氣，絲絲微辣感溫暖身心。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20180125163751.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">時蔬豬肉烏龍麵</h5>
+                          <p class="card-text" style="text-align:justify">丸亀製麵推出新菜單！新品上市之一！此款商品針對顧客的健康著想，創作出蔬菜滿滿的全新商品，富含蔬菜營養，外食族的健康首選！ 選用當季時蔬再加上鮮嫩豬肉，搭配Q彈手作烏龍麵，清爽美味又健康!</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20180605133238.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">泰式豬肉烏龍麵</h5>
+                          <p class="card-text" style="text-align:justify">新品上市之一！此款商品原為季節性菜單，推出期間暢銷熱賣～ 獨家特調酸辣口感的湯頭，配上Q彈有勁的手打烏龍麵、嚴選鮮嫩豬肉，充滿著異國風情～著實是令人回味無窮的好滋味。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20180816113537.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">明太蛋拌烏龍麵</h5>
+                          <p class="card-text" style="text-align:justify">～人氣商品～ 每日店內新鮮現做的手做烏龍麵！此款為釜揚系列的商品，可以品嘗到麵條的原味！拌入半熟蛋的烏龍麵條，加上新鮮明太子，灑下海苔絲點綴，是丸亀製麵熱門商品之一。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- 第二個List group -->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <div class="row row-cols-1 row-cols-md-3 g-4 my-4 text-center">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20150305135538.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">可樂餅</h5>
+                          <p class="card-text" style="text-align:justify">，簡單步驟單純風味，單一食物極度美味，這簡約主義一直都是日本料理的精髓。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic">
+                          <img src="http://www.marukametw.com/menu_image/source/20150305135445.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">炸地瓜</h5>
+                          <p class="card-text" style="text-align:justify">炸地瓜「瓜味」又香又濃，口感又酥脆</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic">
+                          <img src="http://www.marukametw.com/menu_image/source/20150305135638.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">炸白身魚</h5>
+                          <p class="card-text" style="text-align:justify">是很特別的魚，白白軟軟的完全沒有味道，要沾醬會比較好吃，吃起來完全不像是魚肉，很特別的口感。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20150305135509.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">海老天炸蝦</h5>
+                          <p class="card-text" style="text-align:justify">天婦羅蝦炸至金黃，蝦子酥脆的外衣，一口咬下外酥內軟讓人抵擋不住誘惑。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20180816112656.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">炸蔬菜</h5>
+                          <p class="card-text" style="text-align:justify">～人氣商品～炸蔬菜，「可以提升烏龍麵的豐富性」。</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 第三個List group -->
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"> <div class="row row-cols-1 row-cols-md-3 g-4 my-4 text-center">
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="pic ">
+                        <img src="http://www.marukametw.com/menu_image/source/20150305135425.jpg" class="card-img-top " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title font-weight">明太子飯糰</h5>
+                        <p class="card-text" style="text-align:justify">油脂豐富的鮭魚很適合包在飯糰裡，用明太子的鮮味來提高美味度，為簡單的日式烤飯糰增色不少!</p>
+                      </div>
+                      <div class="card-footer alert-light">
+                        <button class="btn btn-outline-dark">下訂</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="pic">
+                        <img src="http://www.marukametw.com/menu_image/source/20150305135411.jpg" class="card-img-top " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title font-weight">牛肉飯糰</h5>
+                        <p class="card-text" style="text-align:justify">牛肉油脂分怖均勻,外層煎至焦香,內層多汁軟嫩,放涼後切成小塊同金黃蒜片包在飯糰裡,是道方便又美味的輕食料理喔。
+                        </p>
+                      </div>
+                      <div class="card-footer alert-light">
+                        <button class="btn btn-outline-dark">下訂</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="pic">
+                        <img src="http://www.marukametw.com/menu_image/source/20150305135359.jpg" class="card-img-top " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title font-weight">鮭魚飯糰</h5>
+                        <p class="card-text" style="text-align:justify">烤鮭魚飯糰. 不老鮭豐富魚油的魚下巴和烤到酥脆的魚皮拌入飯中捏成飯糰飯糰的表面再刷上一層醬汁，再烤至金黃恰恰，有點像鍋粑的口感，鹹香又好吃～.</p>
+                      </div>
+                      <div class="card-footer alert-light">
+                        <button class="btn btn-outline-dark">下訂</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="pic ">
+                        <img src="http://www.marukametw.com/menu_image/source/20150305135332.jpg" class="card-img-top " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title font-weight">豆皮壽司</h5>
+                        <p class="card-text" style="text-align:justify">醋可以讓米飯更甘甜，丸龜製麵豆皮壽司口感細膩，讓整道米食料理更加美味唷！。</p>
+                      </div>
+                      <div class="card-footer alert-light">
+                        <button class="btn btn-outline-dark">下訂</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- 第四個List group -->
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                  <div class="row row-cols-1 row-cols-md-3 g-4 my-4 text-center">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="pic ">
+                          <img src="http://www.marukametw.com/menu_image/source/20170810182510.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title font-weight">親子丼</h5>
+                          <p class="card-text" style="text-align:justify">親子丼口感滑嫩，蛋香更濃，是一個老少皆宜的料理，推薦可以點點看喔</p>
+                        </div>
+                        <div class="card-footer alert-light">
+                          <button class="btn btn-outline-dark">下訂</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <footer>
+        <div class="py-3 px-5 pt-4 text-white" style="background-color: #212529;;">
+            <p>© 2022 非商業製作，僅供練習</p>
+        </div>
+      </footer>
+    </div> 
+    </div>
+<!---footer--> 
+
+      
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div>
+              <label for="validationCustom01" class="form-label">帳號(email)</label>
+              <input type="email" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+            <label for="validationCustom01" class="form-label">密碼</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">帳號未註冊?</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="submit" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+          <div>
+            <label for="validationCustom01" class="form-label">帳號(email)</label>
+            <input type="email" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+          <label for="validationCustom01" class="form-label">密碼</label>
+            <input type="text" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+            <label for="validationCustom01" class="form-label">確認密碼</label>
+            <input type="text" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;"style="margin-bottom:1rem;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                確認條款
+              </label>
+            </div>
+        </form>
+      </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">帳號未登入?</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+              <button type="submit" class="btn btn-primary">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">是否刪除品項</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div>
+                    確定是否刪除此商品
+                  <div class="form-check">
+                  </div>
+              </form>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+              <button type="submit" class="btn btn-primary">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </body>
+        <script src="/app.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>    
+      </html>
+      

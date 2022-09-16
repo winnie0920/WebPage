@@ -1,0 +1,84 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.font-weight {
+  font-weight: 600;
+}
+.font-line{
+  line-height: 1.8rem;
+}
+.navbar-brand {
+  margin: 0% !important;
+}
+.header-carousel-item {
+  height: 450px;
+}
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.black-background-color{
+  background-color: rgba(0, 0, 0, .3);
+}
+.carousel-caption{
+  padding-bottom: 1rem;
+}
+.card-body{
+  box-shadow: 5px 5px 9px rgba(165, 165, 165, 0.4);
+}
+.card{
+  border: 0;
+}
+.bg-info{
+  background-color:#fbf7ef !important;
+}
+.bg-info2{
+  background-color: #f2eee6;
+}
+.h5-card{
+  border:0.125rem solid rgb(172, 14, 14);
+  border-radius: 5px; 
+  display: inline-block;
+  padding: 0.2rem;
+  color: rgb(172, 14, 14);
+  font-weight: 600;
+}
+.color{
+  color: rgb(72, 72, 72);
+}
+.image-2{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/afbca824a6f341ddb41ebd486253d5ab/concept-genhuukei-statement.jpg?fm=webp&q=50);
+}
+.image-3{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/200e02de73a0411db217f6612b09c877/concept-genhuukei-sidemenu_thumb.jpg?fm=webp&q=70);
+}
+.image{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/e2447942e30f4c72a0761a9486622de9/top-menu-bento_pc.jpg?fm=webp&q=50);
+  
+ }
+@media (min-width: 768px) { 
+  .text-min-dark{
+    color: rgb(72, 72, 72);
+  }
+  .black-background-color2{
+    background-image:url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/e2447942e30f4c72a0761a9486622de9/top-menu-bento_pc.jpg?fm=webp&q=50);
+  }
+ }
+ @media (max-width: 768px) {
+  .flex-icon{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .button-margin{
+    margin-bottom: 1rem;
+  }
+ }
+ .jumbotron-bg{
+  height: 300px;
+  background-image: url(https://www.marukametw.com/images/bg-main.jpg);
+  background-position: 50% 45%;
+}
+
+.pic{width:500px; height:350px;overflow:hidden;}
+.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+.pic img:hover{transform:scale(1.2,1.2);}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./style.css">
+    <title>丸龜製麵~主打手工的烏龍麵</title>
+  </head>
+
+
+
+
+  </style>
+  <body data-bs-spy="scroll" data-target=".navbar" data-offset="100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top">
+        <div class="container-fluid font-weight">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://www.marukametw.com/images/logo.png"
+              alt="#"
+              width="75%"
+              height="75%"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html"
+                  >網站首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">店面資訊</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  關於丸龜
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./shopping.html">菜單介紹</a></li>
+                  <li><a class="dropdown-item" href="#">最新消息</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-inline my-1">
+              <a class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal"href="#">登入</a>
+              <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#registerModal">註冊</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!---輪播-->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active header-carousel-item bg-cover"
+            style="
+              background-image:url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/0ec2ce32523740a1ae12b21b8e660a2a/concept-index-slider01_03.jpg?fm=webp&q=70);
+            "
+          >
+            <div class="carousel-caption d-none d-md-block ">
+              <h2 class="font-weight">香濃滑順的麵條</h2>
+              <p>
+                堅持以現點現做的做法及讚岐式點餐，
+                提供顧客最新鮮、最道地的烏龍麵。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item header-carousel-item bg-cover"
+            style="
+              background-image: url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/bc91832d6cc94b6481018e19b77a2b1d/concept-index-slider01_01.jpg?fm=webp&q=70);
+            "
+          >
+            <div class="carousel-caption d-none d-md-block black-background-color px-2">
+              <h2 class="font-weight">外食族的健康首選</h2>
+              <p>
+                看似簡單實為究極特製祕傳湯頭，配上Ｑ彈烏龍麵條，不同凡響的美味。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item header-carousel-item bg-cover"
+            style="
+              background-image: url(https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/6012109f737041129045bfd67c01b0aa/concept-index-slider01_02.jpg?fm=webp&q=70);
+            "
+          >
+            <div class="carousel-caption d-none d-md-block ">
+              <h2 class="font-weight">來自手打的勁道</h5>
+              <p>
+                創造深受更多顧客長期喜愛的餐廳」這就是我們唯一理念，今後也不會改變。
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!---三欄式排版-->
+      <section class="bg-info py-3 p-md-5" >
+        <div class="row mt-3">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="max-width: 24rem;"   >
+            <div class="card-body" style="text-align:center">
+              <div class="pic">
+                <img src="https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/99634e03e9fe4a12ade3ee0dbc540d06/udon-kokuumabutasyabu.jpg?fm=webp&q=50&w=480" class="card-img-top " alt="...">
+              </div>
+              <h5 class="card-title mt-4 h5-card">牛肉烏龍麵</h5>
+              <p class="card-text my-4" style="text-align:justify;">～美味推薦～ 特調濃湯底、口味香濃不死鹹，加上新鮮溫泉蛋，搭配免費的天婦羅花和蔥花，奢華的首選！</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="max-width: 24rem;"   >
+            <div class="card-body" style="text-align:center">
+              <div class="pic">
+                <img src="https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/09ad25e8a9884af8a2a555aa01100952/udon-tomatamacurry.jpg?fm=webp&q=50&w=480" class="card-img-top" alt="...">
+              </div>
+              <h5 class="card-title mt-4 h5-card">番茄雞肉烏龍麵</h5>
+              <p class="card-text my-4" style="text-align:justify;">018丸亀製麵推出新菜單！新品上市之一！此款商品原為季節性菜單，推出期間暢銷熱賣～ 鮮嫩多汁的雞肉搭配清甜可口的番茄，完成濃郁味美的湯頭，爽口又有飽足感。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card" style="max-width: 24rem;"   >
+            <div class="card-body" style="text-align:center">
+              <div class="pic">
+                <img src="https://images.microcms-assets.io/assets/58eb40d284924aeb96de2de93fa08d93/7e84cf54b949403b8dc9416fcf55045c/udon-kake.jpg?fm=webp&q=50&w=480" class="card-img-top" alt="...">
+              </div>
+              <h5 class="card-title mt-4 h5-card">湯烏龍麵</h5>
+              <p class="card-text my-4" style="text-align:justify;">丸亀製麵暢銷商品之一！ 看似簡單實為究極特製祕傳湯頭，配上Ｑ彈烏龍麵條，不同凡響的美味！ ～可另外自加配料台的免費蔥花和天婦羅花～</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <!---圖片文字排版-->
+    <div>
+    <section class=" container bg-info py-5 d-flex " style="position:relative;">
+      <div class="row">
+        <div class="col-md-5 bg-cover black-background-color2 image" 
+        style="
+        position: absolute;
+        top: 0;
+        bottom: 0;"></div>
+      </div>
+      <div class="container" style="margin-left: 5rem;">
+        <div class="row justify-content-end text-white">
+          <div class="col-md-7 text-min-dark" style="z-index: 1;">
+            <h3 class="font-weight" class="nav nav-tabs" role="tablist">關於丸亀製麵</h3>
+            <p style=" line-height: 2rem; text-align:justify;">粟田貴也先生的父親出身自日本香川縣丸亀市，而香川縣以讚岐烏龍麵聞名，讚岐烏龍麵的特色是用手打法製成粗麵條，特別有咬勁，擁有爽口彈牙美味。 粟田貴也以父親的 口味作為出發點，打造出丸亀製麵，成為全球最大的日本烏龍麵連鎖店。
+            丸亀製麵於2013年正式登陸台灣， 不論日本當地、以至全球，丸亀製麵都佔據領先地位。堅持以現點現做的做法及讚岐式點餐， 提供顧客最新鮮、最道地的烏龍麵。</p>
+            <button type="button" class="btn btn-outline-danger">了解更多</button>
+            <div class="row mt-5">
+              <div class="col-6">
+                <h4 class="font-weight">經營理念</h4>
+                <p style="line-height: 2rem; text-align:justify;">「創造深受更多顧客長期喜愛的餐廳」這就是我們唯一理念，今後也不會改變。</p>
+              </div>
+              <div class="col-6">
+                <h4 class="font-weight" >餐廳目標</h4>
+                <p style="line-height: 2rem; text-align:justify;">採用開放式廚房可以讓顧客清楚看見一碗麵完整的製作過程，在餐飲連鎖店中，幾乎很少有看見料理製作過程的型態。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!---Flex排版-->
+      <div class="bg-info2 py-5 color">
+        <h2 class="text-center my-3"></h2>
+        <div class="row  justify-content-center align-items-center flex-icon">
+          <div class="col-md-5">  
+            <div class="d-flex mb-md-5 mb-4 mr-mb-0 mr-2">
+              <div style="margin-right:1rem;padding-top:5px;"><i class="fa-solid fa-utensils fa-4x mx-3"></i></div>
+              <div>
+                <h3 class="font-weight">廚師手工製作</h3>
+                <p>廚師更多追求美味，製作精緻的烏龍麵和面對每一天，繼續磨練技能和感受力。</p>
+              </div>
+            </div>
+            <div class="d-flex mb-md-0 mb-4 ml-mb-0 ml-5">
+              <div style="margin-left:-1.5rem;padding-top:5px;"><i class="fa-solid fa-cart-shopping fa-4x mx-4"></i></div>
+              <div>
+                <h3 class="font-weight">海外置店</h3>
+                <p>丸龜制面積極在海外開設店鋪。我們將介紹海外受歡迎的秘密和原創菜單。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="d-flex mb-md-5 mb-4">
+              <div style="margin-right:1rem;padding-top:5px;"><i class="fa-solid fa-store fa-4x mx-2"></i></div>
+              <div>
+                <h3 class="font-weight">店面外觀</h3>
+                <p>烏龍面的故鄉，穿過門簾時，一位麵條工匠正在製作麵條，蒸汽從你面前的鍋中升起。</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div style="margin-right:1rem;padding-top:5px;"><i class="fa-solid fa-bowl-rice fa-4x mx-2"></i></div>
+              <div>
+                <h3 class="font-weight">滑順的麵條</h3>
+                <p>具有耐嚼的質地。 淡淡的小麥香味。 像這樣，真正的烏冬面 傳達美味 全國各店一一 用麵粉新鮮製成的麵條 我們正在提供。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---google地圖--> 
+      <section class="py-5 bg-info" id="section1">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-6 button-margin">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57834.30544148831!2d121.44938023125!3d25.046149700000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a972de7cbcfd%3A0xb5c745da894b3827!2z5Li45LqA6KO96bq1IOaWsOWFieS4iei2iuWPsOWMl-ermeWJjeW6lyDng4_pvo3purXppJDlu7M!5e0!3m2!1szh-TW!2stw!4v1661066251829!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-5">
+              <form>
+                <div class="mb-3">
+                  <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>選擇店家</option>
+                    <option value="1">新光三越台北站前店</option>
+                    <option value="2">新光三越台北天母店</option>
+                    <option value="3">新光三越台北南西3館店 </option>
+                  </select>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="請輸入姓名" required>
+                  <label for="floatingInput">姓名</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="floatingInput" placeholder="請輸入電話" required>
+                  <label for="floatingInput">電話</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="請輸入電子郵件" required>
+                  <label for="floatingInput">電子郵件</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingInput" placeholder="請輸入人數" required>
+                  <label for="floatingInput">人數</label>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-secondary">取消</button>
+                  <button type="submit" class="btn btn-primary">確認</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section>
+       <!---兩張圖片介紹--> 
+      <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-5  bg-cover image-2">
+          <div class="row">
+            <div class="col-md-11 text-white text-center">
+              <h2 class="font-weight mb-4">歷史背景</h2>
+              <div>
+                <p class="text-start font-line">據說香川縣有大約700家烏冬麵店，每家店都有自己的個性，不僅在口味上，而且在外觀和系統上。 這些商店的共同點是創作者和顧客之間的親密關係。 一位顧客在從沸騰鍋升起的蒸汽中通過櫃檯訂購。 很快，剛做好的烏冬面就會以歡快的聲音端上桌。 它不僅好吃，而且找到你喜歡的餐廳也很有趣。 丸龜制面也很珍惜贊岐烏冬麵店本身的魅力。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-6 p-5  bg-cover image-3">
+            <div class="row">
+              <div class="col-md-11 text-white text-center">
+                <h2 class="font-weight mb-4">其他菜單</h2>
+                <div>
+                  <p class="text-start font-line">在讚岐烏冬面的故鄉香川縣，許多商店都提供種類繁多的配菜。除了天婦羅，還有贊岐關東煮、飯糰、稻荷壽司等餐廳，可以輕鬆享受屬於自己的烏冬面套餐。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+     <!---footer--> 
+    <footer>
+      <div class="py-3 px-5 pt-4 text-white" style="background-color: #212529;;">
+          <p>© 2022 非商業製作，僅供練習</p>
+      </div>
+    </footer>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div>
+              <label for="validationCustom01" class="form-label">帳號(email)</label>
+              <input type="email" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+            <label for="validationCustom01" class="form-label">密碼</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">帳號未註冊?</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="submit" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+          <div>
+            <label for="validationCustom01" class="form-label">帳號(email)</label>
+            <input type="email" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+          <label for="validationCustom01" class="form-label">密碼</label>
+            <input type="text" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;">
+            <label for="validationCustom01" class="form-label">確認密碼</label>
+            <input type="text" class="form-control" id="validationCustom01" required style="margin-bottom:1rem;"style="margin-bottom:1rem;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                確認條款
+              </label>
+            </div>
+        </form>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">帳號未登入?</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="submit" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+  <script src="/app.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"
+  ></script>
+</html>
